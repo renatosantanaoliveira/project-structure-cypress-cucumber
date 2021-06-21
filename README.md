@@ -1,1 +1,28 @@
-# project-structure-cypress-cucumber
+[javascript-image]: https://img.shields.io/badge/javascript-red
+[javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[cucumber-image]: https://img.shields.io/badge/cucumber-4.1.2-brightgreen
+[cucumber-url]: https://github.com/TheBrainFamily/cypress-cucumber-preprocessor
+[cypress-image]:https://img.shields.io/badge/cypress-7.5.0-beige
+[cypress-url]:https://docs.cypress.io/guides/overview/why-cypress
+
+# Project POC demo to BV UI/API
+[![JavaScript Version][javascript-image]][javascript-url]
+[![Cucumber Version][cucumber-image]][cucumber-url]
+[![Cypress Version][cypress-image]][cypress-url]
+
+Estrutura do projeto:
+```
+./
+│  ├── cypress/
+│  │   ├── fixtures/
+│  │   ├── integration/
+│  │   ├── plugins/
+│  │   └── support/
+│  │       ├── elements/
+│  │       ├── pages/
+│  │       ├── steps/
+├── .gitignore
+├── cypress.json
+├── package.json
+└── README.md
+```
