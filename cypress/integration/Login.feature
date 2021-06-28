@@ -1,3 +1,4 @@
+@login
 Feature: Log-In
 
     I as a user of the bookstore
