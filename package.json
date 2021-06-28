@@ -4,15 +4,21 @@
   "description": "POC para demonstrar o cypress como FW de testes UI e API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open": "cypress open"
+    "test": "cypress run --config video=false --env allure=true",
+    "cy:open": "cypress open",
+    "allure:clear": "rm -r allure-results/ allure-report || true",
+    "allure:report": "allure generate allure-results",
+    "test:reporter": "npx npm-run-all allure:clear test allure:report",
+    "allure:open": "allure open allure-report"
   },
   "keywords": [],
   "author": "Renato Santana de Oliveira",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^7.5.0",
-    "cypress-cucumber-preprocessor": "^4.1.2"
+    "@shelex/cypress-allure-plugin": "^2.8.3",
+    "cypress": "^7.6.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "faker": "^5.5.3"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps"
