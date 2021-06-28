@@ -5,7 +5,7 @@
 [cypress-image]:https://img.shields.io/badge/cypress-7.5.0-beige
 [cypress-url]:https://docs.cypress.io/guides/overview/why-cypress
 
-# Project POC demo to BV UI/API
+# Project structure cypress + cucumber + allure
 [![JavaScript Version][javascript-image]][javascript-url]
 [![Cucumber Version][cucumber-image]][cucumber-url]
 [![Cypress Version][cypress-image]][cypress-url]
