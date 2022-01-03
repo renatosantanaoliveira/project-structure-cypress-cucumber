@@ -5,14 +5,10 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       # https://github.com/cypress-io/github-action
       - name: Cypress run
-        uses: cypress-io/github-action@v1
-        with:
-          record: true
-          start: npm run serve
-          working-directory: frontend
+        uses: cypress-io/github-action@v2
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: 6fa96163-4a9b-46c2-be48-c30c5d78b9b5
