@@ -1,8 +1,8 @@
 [javascript-image]: https://img.shields.io/badge/javascript-red
 [javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-[cucumber-image]: https://img.shields.io/badge/cucumber-4.1.2-brightgreen
+[cucumber-image]: https://img.shields.io/badge/cucumber-4.3.1-brightgreen
 [cucumber-url]: https://github.com/TheBrainFamily/cypress-cucumber-preprocessor
-[cypress-image]:https://img.shields.io/badge/cypress-7.5.0-beige
+[cypress-image]:https://img.shields.io/badge/cypress-9.2.0-beige
 [cypress-url]:https://docs.cypress.io/guides/overview/why-cypress
 
 # Project structure cypress + cucumber + allure
