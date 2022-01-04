@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress run --config video=false --env allure=true",
     "cy:open": "cypress open",
-    "cy:dash": "npx cypress run --record --key 6fa96163-4a9b-46c2-be48-c30c5d78b9b5",
+    "cy:dash": "npx cypress run --record --key {secrets_dash}",
     "allure:clear": "rm -r allure-results/ allure-report || true",
     "allure:report": "allure generate allure-results",
     "test:reporter": "npx npm-run-all allure:clear test allure:report",
