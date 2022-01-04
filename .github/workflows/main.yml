@@ -3,7 +3,7 @@ on: [push]
 jobs:
   cypress-run:
     name: Cypress run
-    runs-on: ubuntu-20.04
+    runs-on: windows-latest
     strategy:
       # when one test fails, DO NOT cancel the other
       # containers, because this will kill Cypress processes
@@ -23,7 +23,7 @@ jobs:
           record: true
           parallel: true
           group: 'Actions example'
-          browser: firefox
+          browser: edge
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
